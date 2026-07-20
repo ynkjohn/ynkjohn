@@ -28,6 +28,7 @@ jobs:
         run: node scripts/update-profile.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_OWNER: ${{ github.repository_owner }}
 
       - name: Commit updated status
         run: |

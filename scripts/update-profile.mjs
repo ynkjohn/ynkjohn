@@ -2,14 +2,15 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const token = process.env.GITHUB_TOKEN;
 const profileRepository = process.env.GITHUB_REPOSITORY;
+const profileOwner = process.env.PROFILE_OWNER;
 
-if (!token || !profileRepository) {
-  throw new Error('GITHUB_TOKEN and GITHUB_REPOSITORY are required.');
+if (!token || !profileRepository || !profileOwner) {
+  throw new Error('GITHUB_TOKEN, GITHUB_REPOSITORY, and PROFILE_OWNER are required.');
 }
 
 const query = `
-  query ProfileData {
-    viewer {
+  query ProfileData($login: String!) {
+    user(login: $login) {
       repositories(
         first: 100
         ownerAffiliations: OWNER
@@ -39,7 +40,7 @@ const response = await fetch('https://api.github.com/graphql', {
     'Content-Type': 'application/json',
     'User-Agent': 'profile-readme-updater',
   },
-  body: JSON.stringify({ query }),
+  body: JSON.stringify({ query, variables: { login: profileOwner } }),
 });
 
 if (!response.ok) {
@@ -51,13 +52,17 @@ if (payload.errors?.length) {
   throw new Error(payload.errors.map((error) => error.message).join('; '));
 }
 
-const { viewer } = payload.data;
-const latest = viewer.repositories.nodes.find(
+const { user } = payload.data;
+if (!user) {
+  throw new Error(`GitHub user not found: ${profileOwner}`);
+}
+
+const latest = user.repositories.nodes.find(
   (repository) => repository.nameWithOwner.toLowerCase() !== profileRepository.toLowerCase(),
 );
 
-const contributionCount = viewer.contributionsCollection.contributionCalendar.totalContributions;
-const projectCount = viewer.repositories.totalCount;
+const contributionCount = user.contributionsCollection.contributionCalendar.totalContributions;
+const projectCount = user.repositories.totalCount;
 const latestName = latest?.name ?? '—';
 const latestDate = latest?.pushedAt
   ? new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' })
