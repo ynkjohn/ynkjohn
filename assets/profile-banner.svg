@@ -1,0 +1,18 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ynkjohn profile banner</title>
+  <desc id="desc">A midnight basketball-court inspired banner in navy, cream, orange, and red.</desc>
+  <rect width="1280" height="360" fill="#111A27"/>
+  <rect y="252" width="1280" height="108" fill="#172232"/>
+  <path d="M0 252H1280M640 252V360M450 360C450 255 830 255 830 360" stroke="#F7E9D0" stroke-opacity=".25" stroke-width="2"/>
+  <path d="M184 0V360M1096 0V360" stroke="#F7E9D0" stroke-opacity=".07" stroke-width="2"/>
+  <path d="M0 70H1280M0 146H1280" stroke="#F7E9D0" stroke-opacity=".035" stroke-width="1"/>
+  <circle cx="1078" cy="128" r="154" fill="#C9482D"/>
+  <circle cx="1078" cy="128" r="154" stroke="#F7E9D0" stroke-opacity=".2" stroke-width="3"/>
+  <path d="M924 128H1232M1078 -26V282M969 20C1047 85 1109 171 1187 236M1187 20C1109 85 1047 171 969 236" stroke="#111A27" stroke-width="7"/>
+  <circle cx="1078" cy="128" r="66" stroke="#F7E9D0" stroke-opacity=".8" stroke-width="2"/>
+  <rect x="72" y="72" width="10" height="164" fill="#D97932"/>
+  <text x="112" y="128" fill="#F7E9D0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="7">YNKJOHN</text>
+  <text x="110" y="190" fill="#F7E9D0" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">CODE ON GREEN.</text>
+  <text x="113" y="224" fill="#D4C8B2" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">BUILDING IN PUBLIC · AFTER THE BUZZER</text>
+  <path d="M113 263H350" stroke="#D97932" stroke-width="4"/>
+</svg>
