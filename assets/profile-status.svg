@@ -1,0 +1,24 @@
+<svg width="1280" height="300" viewBox="0 0 1280 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Live profile statistics</title>
+  <desc id="desc">163 contributions in the last 12 months, 4 public projects, and yomu last worked on in July 2026.</desc>
+  <defs>
+    <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".65" fill="#F2EEE5" fill-opacity=".1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="300" fill="#101318"/>
+  <rect width="1280" height="300" fill="url(#dots)"/>
+  <path d="M0 52H1280M0 248H1280M440 52V248M780 52V248" stroke="#F2EEE5" stroke-opacity=".18"/>
+  <path d="M58 53V248" stroke="#D64034" stroke-width="8"/>
+  <text x="91" y="91" fill="#F2EEE5" font-family="Impact, Haettenschweiler, sans-serif" font-size="21" letter-spacing="2.4">PROFILE STATUS</text>
+  <text x="91" y="116" fill="#A9AFB7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="1.2">LIVE DATA · UPDATED DAILY</text>
+  <text x="91" y="181" fill="#F2EEE5" font-family="Impact, Haettenschweiler, sans-serif" font-size="42" letter-spacing="1">163</text>
+  <text x="91" y="211" fill="#C7CBD0" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14" letter-spacing="1.25">CONTRIBUTIONS · 12 MONTHS</text>
+  <text x="479" y="181" fill="#F2EEE5" font-family="Impact, Haettenschweiler, sans-serif" font-size="42" letter-spacing="1">04</text>
+  <text x="479" y="211" fill="#C7CBD0" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14" letter-spacing="1.25">PUBLIC PROJECTS</text>
+  <text x="820" y="91" fill="#D64034" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="1.4">LAST WORKED ON</text>
+  <text x="820" y="151" fill="#F2EEE5" font-family="Impact, Haettenschweiler, sans-serif" font-size="48" letter-spacing="1.5">YOMU</text>
+  <text x="820" y="184" fill="#C7CBD0" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14" letter-spacing="1.2">JUL 2026 · PUBLIC REPOSITORY</text>
+  <path d="M820 217H1171" stroke="#D64034" stroke-width="3"/>
+  <path d="M1195 208L1224 223L1195 238" stroke="#F2EEE5" stroke-width="2"/>
+</svg>
