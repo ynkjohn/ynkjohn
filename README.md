@@ -1,8 +1,16 @@
-<img src="./assets/profile-status.svg" width="100%" alt="Live profile statistics" />
+<!-- status:start -->
+```text
+john@github:~$ status
+
++-- public contributions / last 12 months : 53
++-- public projects                       : 04
+`-- last worked on                       : yomu (JUL 2026)
+```
+<!-- status:end -->
 
 ## sobre mim
 
 Sou o john. Faço ferramentas e pequenos produtos que diminuem a fricção no
 computador. No momento, exploro Python, Dart e apps para Windows.
 
-<sub>Os dados acima são atualizados diariamente pelo GitHub Actions.</sub>
+<sub>Os dados acima são atualizados diariamente.</sub>
