@@ -1,18 +1,21 @@
-<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">ynkjohn profile banner</title>
-  <desc id="desc">A midnight basketball-court inspired banner in navy, cream, orange, and red.</desc>
-  <rect width="1280" height="360" fill="#111A27"/>
-  <rect y="252" width="1280" height="108" fill="#172232"/>
-  <path d="M0 252H1280M640 252V360M450 360C450 255 830 255 830 360" stroke="#F7E9D0" stroke-opacity=".25" stroke-width="2"/>
-  <path d="M184 0V360M1096 0V360" stroke="#F7E9D0" stroke-opacity=".07" stroke-width="2"/>
-  <path d="M0 70H1280M0 146H1280" stroke="#F7E9D0" stroke-opacity=".035" stroke-width="1"/>
-  <circle cx="1078" cy="128" r="154" fill="#C9482D"/>
-  <circle cx="1078" cy="128" r="154" stroke="#F7E9D0" stroke-opacity=".2" stroke-width="3"/>
-  <path d="M924 128H1232M1078 -26V282M969 20C1047 85 1109 171 1187 236M1187 20C1109 85 1047 171 969 236" stroke="#111A27" stroke-width="7"/>
-  <circle cx="1078" cy="128" r="66" stroke="#F7E9D0" stroke-opacity=".8" stroke-width="2"/>
-  <rect x="72" y="72" width="10" height="164" fill="#D97932"/>
-  <text x="112" y="128" fill="#F7E9D0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="7">YNKJOHN</text>
-  <text x="110" y="190" fill="#F7E9D0" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">CODE ON GREEN.</text>
-  <text x="113" y="224" fill="#D4C8B2" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">BUILDING IN PUBLIC · AFTER THE BUZZER</text>
-  <path d="M113 263H350" stroke="#D97932" stroke-width="4"/>
+<svg width="1280" height="128" viewBox="0 0 1280 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract warm color study">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1280" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181E2A"/>
+      <stop offset=".5" stop-color="#242034"/>
+      <stop offset="1" stop-color="#221D25"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grain" width="11" height="11" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".6" fill="#F3E1B7" fill-opacity=".18"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="128" fill="url(#base)"/>
+  <path d="M-75 115C126 30 225 178 426 93C609 16 732 143 919 74C1051 25 1157 48 1355 -4V152H-75V115Z" fill="#D54D35" fill-opacity=".82" filter="url(#blur)"/>
+  <path d="M-11 116C202 51 281 157 484 99C686 41 724 131 937 81C1077 48 1162 85 1290 31" stroke="#F0C671" stroke-opacity=".86" stroke-width="3"/>
+  <path d="M0 98C194 32 294 148 471 84C641 22 756 123 943 65C1088 20 1174 58 1280 18" stroke="#FFF1CA" stroke-opacity=".52" stroke-width="1"/>
+  <rect width="1280" height="128" fill="url(#grain)"/>
+  <path d="M0 127.5H1280" stroke="#F8E8C3" stroke-opacity=".18"/>
 </svg>
