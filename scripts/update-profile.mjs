@@ -9,7 +9,7 @@ if (!token || !profileRepository || !profileOwner) {
 }
 
 const query = `
-  query ProfileData($login: String!) {
+  query ProfileData($login: String!, $from: DateTime!, $to: DateTime!) {
     user(login: $login) {
       repositories(
         first: 100
@@ -24,7 +24,7 @@ const query = `
           pushedAt
         }
       }
-      contributionsCollection {
+      contributionsCollection(from: $from, to: $to) {
         contributionCalendar {
           totalContributions
         }
@@ -33,6 +33,10 @@ const query = `
   }
 `;
 
+const to = new Date();
+const from = new Date(to);
+from.setUTCFullYear(from.getUTCFullYear() - 1);
+
 const response = await fetch('https://api.github.com/graphql', {
   method: 'POST',
   headers: {
@@ -40,7 +44,14 @@ const response = await fetch('https://api.github.com/graphql', {
     'Content-Type': 'application/json',
     'User-Agent': 'profile-readme-updater',
   },
-  body: JSON.stringify({ query, variables: { login: profileOwner } }),
+  body: JSON.stringify({
+    query,
+    variables: {
+      login: profileOwner,
+      from: from.toISOString(),
+      to: to.toISOString(),
+    },
+  }),
 });
 
 if (!response.ok) {
